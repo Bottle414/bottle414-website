@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有向图绘制与拓扑排序</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #canvas {
+            border: 2px dashed rgb(60, 163, 198);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(227, 240, 247);
+        }
+
+        button {
+            transition: background-color 0.3s;
+            padding: 8px 15px;
+            font-size: 18px;
+            background-color: rgb(152, 213, 246);
+            border-radius: 10px;
+            border-color: rgb(99, 158, 203);
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1 style="">有向图绘制与拓扑排序</h1>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <div class="button-container">
+        <button id="topologicalSortButton">拓扑排序</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/graphlib@2.1.0/dist/graphlib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
